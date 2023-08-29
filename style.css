@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color:rgb(49, 3, 92); */
+    padding: 5vh 20%;
+}
+
+h1 {
+    color: aliceblue;
+    font-weight: bold;
+    font-family: 'Sedgwick Ave Display', cursive;
+    margin-bottom: 15px;
+}
+
+.toDoList {
+    background-color: rgb(55, 6, 101);
+    padding: 30px;
+    border: 1px solid blueviolet;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 2px 2px 5px blueviolet;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10%;
+    margin-bottom: 30px;
+}
+
+.form input {
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.tasks {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.form input[type='submit'] {
+    background-color: rgb(55, 6, 101);;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.tasks .taskEle {
+   display: grid;
+   grid-template-columns: 20fr 2fr;
+   gap: 25px;
+   align-items: center;
+    border: 2px solid rgb(68, 5, 127);
+    background-color: rgb(55, 6, 101);;
+    color: aliceblue;
+    font-size: 18px;
+    font-family: sans-serif;
+    padding: 4px;
+    margin: 10px 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.tasks div button {
+    background-color: #fff;
+    font-size: 18px;
+    color: rgb(55, 6, 101);
+    padding: 5px 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.tasks div button:hover {
+    background-color: rgb(50, 3, 95);
+    border: 2px solid rgb(179, 98, 254);
+    color: #fff;
+}
+
+.tasks .taskEle div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.done {
+    opacity: .5;
+}
+
+input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+}
+
+body {
+    position: relative;
+}
+
+.alert {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    padding: 40px 80PX;
+    background-color: #fff;
+    color: rgb(55, 6, 101);
+    text-align: center;
+    display: none;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    border: 2px solid rgb(55, 6, 101);
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgb(55, 6, 101);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.alert i {
+    font-size: 65px;
+    margin: 30px 0;
+}
+
+.alert h1 {
+    font-size: 45px;
+    margin: 20px 0;
+    color: rgb(55, 6, 101);
+}
+
+.alert p {
+    font-family: sans-serif;
+    font-size: 20px;
+
+}
+
+#mode {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 35px;
+}
+
+@media (max-width: 800px) {
+    .toDoList {
+        padding: 5%;
+    }
+
+    .form,.tasks .taskEle {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+   body {
+    padding: 10%;
+   }
+
+   #mode {
+    top: 10px;
+   }
+
+   .alert {
+    padding: 15px;
+   }
+}
+
+@media (max-width: 500px) {
+    .alert {
+        padding: 20px;
+        width: 300px;
+    }
+
+    .alert i {
+        font-size: 50px;
+    }
+
+    .alert h1 {
+        font-size: 30px;
+        /* margin: 20px 30px; */
+    }
+
+    .alert p {
+        font-size: 16px;
+    }
+}
